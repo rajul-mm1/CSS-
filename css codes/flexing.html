@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>FLEX PROPERTIES</title>
+    <style>
+        .container {
+            height: 544px; 
+            width: 100%;
+            border: 2px solid black;
+
+            display: flex;
+            /* the defualt flex-direction is row  */
+            flex-direction: row;
+            /* flex-direction: column;
+                flex-direction: row-reverse;
+                flex-direction: column-reverse; */
+
+             flex-wrap:wrap;
+               /* flex-direction: wrap-reverse; */
+            /* shorthand for flex dir and flex wrap */
+            /* flex-flow: column-reverse wrap; */
+
+            /*justify content will justify the content in horizontal dir*/
+            /* justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly; */
+
+            /* align-items justify the content in vertical direction; */
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items:stretch;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #box-2{
+            /* higher the order later it comes */
+        /* order:45;
+        flex-grow:3; */
+        flex-basis: 160px;
+        /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+    }
+        #box-4{
+            /* order:15;
+            flex-shrink:5;
+            align-self: center;
+            align-self: flex-end;
+            align-self: flex-start; */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box" id="box-1">BOX 1</div>
+        <div class="box" id="box-2">BOX 2</div>
+        <div class="box" id="box-3">BOX 3</div>
+        <div class="box" id="box-4">BOX 4</div>
+        <div class="box" id="box-5">BOX 5</div>
+        <div class="box" id="box-6">BOX 6</div>
+        <!-- <div class="box" id="box-7">BOX 7</div> -->
+    </div>
+
+</body>
+
+</html>
+
+
+</body>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TRANSITIONS</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+        .tia{
+            background-color: blueviolet;
+            color:black;
+            border:5px solid green;
+            padding:45px 20px;
+            margin:auto;
+            width:200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+            /* Transition short hand property in one line */
+        /* transition: background-color 1s ease-in-out 2s; */
+
+        }
+        .tia:hover{
+            background-color: aqua;
+            height:500px;
+            width:500px;
+            border-radius:100px;
+            font-size:larger;
+        }
+
+    </style>
+    </head>
+    <body>
+        <h1 class="tia">THIS IS TIA BLOGGER</h1>
+    </body>
+    </html>

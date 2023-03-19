@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GRID TEMPLATE AREA</title>
+    <style>
+        .cont{
+            display:grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-gap:1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .items{
+            background-color: yellow;
+            color:black;
+            font-weight: bold;
+        }
+        #navbar{
+            grid-area:navbar;
+        }
+        #section{
+            grid-area:section;
+        }
+        #aside{
+            grid-area:aside;
+        }
+        footer{
+            grid-area:footer;
+        }
+        </style>
+        </head>
+        <body>
+            <div class="cont">
+            <div id="navbar" class="items"><pre>HOME      ABOUT       CONTACT US      EMAIL      INFO       BLOG</pre></div>
+            <div id="section" class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero error maiores facilis ut! Non ipsum ducimus animi vitae placeat, dignissimos consequuntur a unde temporibus voluptatibus repellendus ullam expedita doloribus excepturi voluptas! Veniam vero facere maxime, doloribus nihil, ut quae porro enim atque dolore officia vitae. Similique, commodi reiciendis quaerat blanditiis eum velit accusamus odit perferendis architecto voluptatem neque a ut aperiam dolorum quod quos. Eum incidunt ducimus quasi qui eaque nam aperiam fugit ratione molestias nobis commodi necessitatibus vel deserunt quas quo, libero sed. Dolor possimus, dignissimos delectus magni libero deserunt quibusdam deleniti, exercitationem odit neque culpa impedit explicabo facere!</div>
+            <div id="aside" class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quam a laudantium corporis, aliquam alias vitae debitis, eum necessitatibus error accusamus dicta magnam! Blanditiis quia iusto, cumque vero tenetur delectus voluptate, voluptates pariatur inventore illum dolor amet omnis ipsa fugit, reprehenderit natus eaque voluptatibus facere cupiditate ducimus aliquid id? Neque?</div>
+            <footer class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, natus? Sapiente deserunt neque quam eligendi quae reprehenderit atque ex ipsum!</footer>
+            </div>
+        </body>
+        </html>

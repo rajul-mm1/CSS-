@@ -1,0 +1,40 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GRID ROWS</title>
+    <style>
+        .cont{
+            display:grid;
+            grid-template-rows:1fr 2fr 3fr 4fr;
+            grid-auto-rows: 2fr;
+            /* grid-template-columns: 300px 300px 300px; */
+            grid-template-columns: repeat(5,300px);
+        }
+        .item{
+            border:2px solid black;
+            padding:12px 15px;
+            background-color: aquamarine;
+            color:black;
+            font-weight: bold;
+            margin:5px;
+        }
+        </style>
+        </head>
+        <body>
+            <div class="cont">
+                <div class="item">THIS IS THE item 1</div>
+                <div class="item">THIS IS THE item 2</div>
+                <div class="item">THIS IS THE item 3</div>
+                <div class="item">THIS IS THE item 4</div>
+                <div class="item">THIS IS THE item 5</div>
+                <div class="item">THIS IS THE item 6</div>
+                <div class="item">THIS IS THE item 7</div>
+                <div class="item">THIS IS THE item 8</div>
+                <div class="item">THIS IS THE item 9</div>
+                <div class="item">THIS IS THE item 10</div>
+                
+
+            </div>
+        </body>
+        </html>

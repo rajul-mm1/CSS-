@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PSEUDO SELECTORS AND DESIGNING</title>
+        <style>
+            .cont{
+                background-color: bisque;
+                color:black;
+                border:5px solid black;
+                padding:50px;
+                margin:50px auto;
+                font-family: ubuntu;
+                font-weight:bold;
+                font-size: larger;
+            }
+            .btn{
+                border:2px solid crimson;
+                background-color: rgb(175, 216, 135);
+                padding: 13px;
+                border-radius: 2px;
+            }
+            .btn:hover{
+                color: blue;
+                background-color: beige;
+                cursor:grab;
+                border:5px solid black;
+
+            }
+            
+            
+            a:active{
+                color:yellow;
+                background-color: blue;
+            }
+            a:visited{
+                color:brown;
+                background-color: yellow;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+            <h3>MY PSEUDO SELECTORS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rerum asperiores maxime voluptatum perspiciatis. Id et totam facere doloribus, ex odit? Voluptatum porro nulla exercitationem provident cupiditate eum vitae autem?</p>
+            <a href="https://www.google.com" class="btn">READ MORE</a>
+            <button class="btn">CLICK HERE</button>
+        </div>
+    </body>
+</html>

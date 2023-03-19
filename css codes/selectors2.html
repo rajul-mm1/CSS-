@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MEDIA QUERY</title>
+    <style>
+        h1 {
+            color: white;
+            background-color: hotpink;
+        }
+
+        /*all paras present inside div are targeted*/
+        /* div p{
+            background-color: aqua;
+            color:black;
+        } */
+
+        /*paras under div list are targeted*/
+        /* div li p{
+            background-color:black ;
+            color: white;
+        }
+
+        /*it will target the child paras of div
+        div > p{
+            background-color: blueviolet;
+            color:yellow;
+            font-size: larger; 
+        }*/
+
+        /*it will target all the lists present inside div*/
+        /* div ul {
+            background-color: aquamarine;
+            color: black;
+        } */
+
+        /*it will target the elements just after the sibling of div*/ 
+        /* div+p{
+            background-color: blue;
+            color:white;
+        } */
+        #para{
+            background-color: brown;
+            color:beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> THIS IS MY HEADING</h1>
+    <div class="cont">
+        <ul>
+            <li>
+                <p>this is 1st para</p>
+            </li>
+            <li>this is my list</li>
+        </ul>
+        <div class="block">
+            <p>this is my 2nd para</p>
+        </div>
+        <p>this is my 3rd para</p>
+    </div>
+    <p id="para">this is my last and out of div para</p>
+</body>
+
+</html>

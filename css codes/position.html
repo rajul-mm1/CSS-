@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>POSTIONS</title>
+        <style>
+            .cont{
+                border:2px solid red;
+                background-color: aqua;
+                height:3500px;
+            }
+            .box{
+                border:3px solid rebeccapurple;
+                background-color: azure;
+                width:100px;
+                margin:4px;
+                height:100px;
+                display: inline-block;
+            }
+             #box2{
+                
+                /* POSTIONS: static(by default), absolute,relative, fixed, sticky; */
+                /* absolute- position of the element relative to the parent border */
+                position:absolute;
+                top:80px;
+
+               /* relative - position relative to itself which leaves a gap; */
+                /* position:relative;
+                top:50px;
+                left:10px; */
+             
+             /* fixed - position that is fixed on scrolling also */
+             /* position:fixed;
+             left:500px; */
+            /* sticky - position here also is fixed */
+            position:sticky;
+            bottom:20px;
+        } 
+        </style>
+        </head>
+        <body>
+            <div class="cont">
+                <div class="box" id="box1">Box 1</div>
+                <div class="box" id="box2">Box 2</div>
+                <div class="box" id="box3">Box 3</div>
+                <div class="box" id="box4">Box 4</div>
+                
+    
+            </div>
+        </body>
+    </html> 
+            
+            
+            
+            

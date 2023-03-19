@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nTH CHILD</title>
+    <style>
+        .cont{
+            font-size: larger;
+            display:block;
+            width:233px;
+            margin: auto;
+        }
+        input[type ='text']{
+            background-color: aqua;
+            color:black;
+            font-weight: bold;
+        }
+        input[type='password']{
+            background-color: blue;
+            color: whitesmoke;
+        }
+        input[type='email']{
+            background-color: yellow;
+        }
+        li:nth-child(5){
+            background-color: brown;
+        }
+
+        /*n = 0,1,2,3 and so on*/
+        li:nth-child(2n+1){
+            background-color: aquamarine;
+        }
+        li:nth-child(3n+5){
+            background-color: black;
+        }
+        li:nth-child(odd){
+            background-color: yellowgreen;
+        }
+        li:nth-child(even){
+            background-color: blueviolet;
+        }
+        a[target='_blank']{
+            background-color: bisque;
+        }
+        a[target='_self']{
+            background-color: violet;
+        }
+        </style>
+        </head>
+        <body>
+            <div class="cont">
+                <h1><a href = "https://www.google.com" target="_blank">GO TO GOOGLE</a></h1>
+                <h1><a href = "https://www.facebook.com" target="_self">GO TO facebook</a></h1>
+
+            <form action="" target="_blank">
+                <input type="text" placeholder="enter name"><br>
+                <input type="password" placeholder="enter password"><br>
+                <input type="email" placeholder="enter email"><br>
+
+            </form>
+            <ul>
+                <li class="item 1">ITEM 1 </li>
+                <li class="item 2">ITEM 2 </li>
+                <li class="item 3">ITEM 3 </li>
+                <li class="item 4">ITEM 4 </li>
+                <li class="item 5">ITEM 5 </li>
+                <li class="item 6">ITEM 6 </li>
+                <li class="item 7">ITEM 7 </li>
+                <li class="item 8">ITEM 8 </li>
+                <li class="item 9">ITEM 9 </li>
+                <li class="item 10">ITEM 10 </li>
+
+            </ul>
+        </div>
+        </body>
+        </html>

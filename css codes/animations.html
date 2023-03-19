@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ANIMATIONS AND KEYFRAMES</title>
+    <style>
+        .cont{
+            background-color: yellow;
+            height:1200px;
+            width:1200px;
+        }
+        .anime{
+            border:2px solid red;
+            background-color: blue;
+            height: 400px;
+            width:400px;
+            color:azure;
+            position: relative;
+            animation-name:cartoon;
+            animation-duration: 10s;
+            animation-iteration-count:5;
+            /* animation-timing-function:ease; */
+            /* animation-fill-mode:alternate;
+            animation-delay: 2s;*/
+            animation-direction: alternate;
+
+            /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: harry 5s ease-in 1s 12 backwards; */
+
+        }
+        @keyframes cartoon {
+            0%{
+                top:0px;
+                left:0px;
+                /* height: 200px;
+                width: 200px; */
+                background: url('https://images.unsplash.com/photo-1664923000175-dee661f00437?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            }
+            25%{
+                top:250px;
+                left:0px;
+                background: url('https://images.unsplash.com/photo-1665028604519-f16bac3b166a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80');
+                /* height: 200px;
+                width: 200px; */
+            }
+            75%{
+                top:250px;
+                left:500px;
+                background: url('https://images.unsplash.com/photo-1664986167762-5e17a2210fce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80');
+                /* height: 200px;
+                width: 200px; */
+            }
+            100%{
+                top:0px;
+                left:500px;
+                background: url('https://plus.unsplash.com/premium_photo-1663133737289-448f4954f042?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80');
+                /* height: 200px;
+                width: 200px; */
+            }
+            
+        }
+        /* @keyframes cartoon{
+            from{
+                width:200px;
+            }
+            to{
+                width:800px;
+            }
+        } */
+
+    </style>
+    </head>
+    <body>
+        <div class="cont">
+        <h1 class="anime">ANIME CREATION</h1>
+        </div>
+    </body>
+    </html>

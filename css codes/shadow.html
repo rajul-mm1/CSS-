@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOX AND TEXT SHADOW</title>
+    <style>
+        .cont{
+            display:flex;
+            padding:23px 23px;
+            margin:2px;
+
+        }
+        .card{
+            border:2px solid black;
+            margin:5px;
+            
+            box-shadow: 2px 5px blue; /*offset-x offset-y color */
+            box-shadow: -2px -5px violet; /*+ is for lower shadow and - is for upper shadow*/
+            box-shadow: 5px 3px 8px violet;  /*offset-x offset-y blur-radius color*/
+            box-shadow: 5px 3px 8px 6px violet; /*offset-x offset-y blur-radius spread-radius color */
+            box-shadow: inset 2px 5px violet; /* inset is for inner box shadow*/
+            box-shadow: 5px 3px 8px rgba(80, 141, 202, 0.4); /*alpha is used for darkening of the color*/
+        }
+        h3,p{
+            text-align: center;
+            text-shadow: 4px 5px yellow;
+            
+        }
+    </style>
+<body>
+    <div class="cont">
+        <div class="card">
+            <h3> THIS IS A CSS LESSON</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam eveniet rerum quia vitae itaque dolor nam sint doloribus quas consequuntur natus beatae ex deleniti quibusdam ullam, aperiam quaerat provident sapiente!</p>
+        </div>
+        <div class="card">
+            <h3>THIS IS MY HTML LECTURE</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam assumenda tenetur laborum, maxime impedit. Eum magni natus excepturi omnis totam! Error explicabo at dolores saepe illo, nihil temporibus laboriosam?</p>
+        </div>
+        <div class="card">
+            <h3>THIS IS MY JS LECTURE</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, commodi molestiae nemo voluptas cupiditate perferendis minus! At, reprehenderit sequi laborum, quas ipsum voluptatem ullam architecto, amet doloribus ab nostrum velit!</p>
+        </div>
+    </div>
+</body>
+</head>
